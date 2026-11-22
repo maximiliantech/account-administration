@@ -29,13 +29,17 @@ orgs:
     default_repository_permission: none
     # Owner roster (ORG-OWNER-COUNT, SEC §9.5 least privilege): exactly the
     # accounts that exercised owner-level rights in the audit log, plus the
-    # foundation continuity account. Everyone else administers through the
-    # enterprise owner role, which is audited when it is used. See the pull
-    # request body for the per-account evidence.
+    # foundation continuity accounts LF-Europe and thelinuxfoundation. Those
+    # two are foundation staff accounts, exempt from the owner baseline
+    # (compliance-scan `foundationAccounts`), and are kept as owners on
+    # purpose. Everyone else administers through the enterprise owner role,
+    # which is audited when it is used. See the pull request body for the
+    # per-account evidence.
     admins:
     - estherrgarcia
     - jakobmoellerdev
     - LF-Europe
+    - thelinuxfoundation
     members:
     - abuango
     - afritzler
@@ -91,7 +95,6 @@ orgs:
     - Shegox
     - Skarlso
     - stephanstackit
-    - thelinuxfoundation
     - tlakner
     - TobiasDeppeTSI
     - trevex
